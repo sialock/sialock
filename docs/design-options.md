@@ -10,7 +10,7 @@ This profile is designed as a computational-biology research portfolio. All bann
 
 ## Switch the main theme
 
-**No code editing required:** open [Switch SIA/LAB theme](../actions/workflows/switch-profile-theme.yml) in the Actions tab, choose **Run workflow**, select the theme, then run it. The workflow modifies only the hero image reference in `README.md` and records a normal commit.
+**No code editing required:** open [Switch SIA/LAB theme](https://github.com/sialock/sialock/actions/workflows/switch-profile-theme.yml) in the Actions tab, choose **Run workflow**, select the theme, then run it. The workflow modifies only the hero image reference in `README.md` and records a normal commit.
 
 For a manual switch, change the first `<img src="./assets/hero-molecular-lab.png"...>` reference in `README.md` to either `hero-protein-atlas.png` or `hero-data-skyline.png`.
 
@@ -21,7 +21,7 @@ python -m pip install numpy Pillow
 python scripts/render_profile_art.py
 ```
 
-Alternatively run [Build 3D research artwork](../actions/workflows/render-profile-art.yml) from GitHub Actions. All three images are deterministically generated as PNG.
+Alternatively run [Build 3D research artwork](https://github.com/sialock/sialock/actions/workflows/render-profile-art.yml) from GitHub Actions. All three images are deterministically generated as PNG.
 
 ## Real 3D GitHub contribution image
 
