@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d20">
+  <meta name="description" content="Sia's computational biology projects, from single-cell machine learning to protein structure simulation.">
+  <meta property="og:title" content="SIA / Molecular Universe">
+  <meta property="og:description" content="Explore computational biology projects in an interactive 3D universe.">
+  <meta property="og:type" content="website">
+  <title>SIA / Molecular Universe</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#projects">Skip to projects</a>
+  <header class="navigation" aria-label="Main navigation">
+    <a class="logo" href="#home" aria-label="Molecular Universe home">
+      <span class="molecule-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>SIA <b>/</b> MOLECULAR UNIVERSE</span>
+    </a>
+    <nav aria-label="Site sections">
+      <a href="#projects">Projects</a>
+      <a href="#focus">Research focus</a>
+      <a href="https://github.com/sialock" target="_blank" rel="noopener noreferrer"><span class="github-symbol" aria-hidden="true">◉</span> GitHub <span class="external" aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-label="Molecular Universe introduction">
+      <div class="universe-wash" aria-hidden="true"></div>
+      <canvas id="universe" aria-label="Interactive 3D molecular scene" role="img"></canvas>
+      <div class="fallback-universe" aria-hidden="true">
+        <div class="fallback-orbit"></div>
+        <div class="fallback-orb fallback-dna"></div>
+        <div class="fallback-orb fallback-protein"></div>
+        <div class="fallback-orb fallback-future"></div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="intro-panel glass">
+          <p class="eyebrow"><span class="eyebrow-line"></span> COMPUTATIONAL BIOLOGY × MACHINE LEARNING</p>
+          <h1>Explore a molecular <span>universe</span> of research.</h1>
+          <p class="intro-text">Single-cell genomics, protein structure, and software built for experiments you can reproduce.</p>
+          <div class="actions">
+            <a class="button primary" href="#projects"><span aria-hidden="true">⌬</span> Explore projects <span aria-hidden="true">→</span></a>
+            <a class="button secondary" href="https://github.com/sialock" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-center" aria-label="Explore project nodes">
+          <button class="node-label label-protein" type="button" data-scroll-target="protein-project"><span class="node-label-dot purple"></span> Protein-MC-Go</button>
+          <button class="node-label label-donor" type="button" data-scroll-target="donor-project"><span class="node-label-dot blue"></span> DonorShift-Bench</button>
+          <button class="node-label label-next" type="button" data-scroll-target="future-project"><span class="node-label-dot orange"></span> Next research node</button>
+          <p class="scene-hint"><span class="hint-sparkle" aria-hidden="true">✦</span> Drag to orbit · Select a node</p>
+        </div>
+
+        <aside class="status-panel glass" aria-label="Research project summary">
+          <div class="status-heading"><span class="live-indicator"></span> RESEARCH SPACE <span class="mini-asterisk">✧</span></div>
+          <div class="stat-row">
+            <div><strong>02</strong><span>PROJECTS</span></div>
+            <div><strong>03</strong><span>TOPICS</span></div>
+          </div>
+          <div class="status-divider"></div>
+          <div class="status-mini"><span class="check-icon" aria-hidden="true">✓</span><span>Open-source research code<br><small>Explore the work below</small></span></div>
+          <p class="status-bottom">SINGLE-CELL <span>·</span> STRUCTURES <span>·</span> ML</p>
+        </aside>
+      </div>
+      <div class="hero-bottom-line" aria-hidden="true"></div>
+    </section>
+
+    <div class="content-shell">
+      <section id="projects" class="project-section" aria-labelledby="project-title">
+        <div class="section-head">
+          <div><p class="section-kicker"><span class="heading-glyph">✥</span> FEATURED PROJECTS</p><h2 id="project-title">Project constellations</h2></div>
+          <p>Research code, experiments, and tools.</p>
+        </div>
+
+        <div class="cards">
+          <article class="project-card donor" id="donor-project">
+            <div class="card-top"><div class="icon-planet planet-donor" aria-hidden="true"><span>⌬</span></div><span class="category">SINGLE-CELL ML</span></div>
+            <h3>DonorShift-Bench</h3>
+            <p>Benchmark cell-type classifiers on held-out donors, not random cell splits.</p>
+            <div class="card-detail"><span>Leave-one-donor-out</span><span>Train-only features</span><span>HTML + CSV reports</span></div>
+            <div class="card-footer"><a href="https://github.com/sialock/DonorShift-Bench" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a><span class="project-state" data-repo="DonorShift-Bench">Public repo</span></div>
+          </article>
+
+          <article class="project-card protein" id="protein-project">
+            <div class="card-top"><div class="icon-planet planet-protein" aria-hidden="true"><span>⌁</span></div><span class="category">STRUCTURAL BIOLOGY</span></div>
+            <h3>Protein-MC-Go</h3>
+            <p>A reproducible, native-biased Cα Monte Carlo demonstration with clear scientific limits.</p>
+            <div class="card-detail"><span>Protein geometry</span><span>Seeded simulations</span><span>Python CLI</span></div>
+            <div class="card-footer"><a href="https://github.com/sialock/protein-folding-" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a><span class="project-state" data-repo="protein-folding-">Public repo</span></div>
+          </article>
+
+          <article class="project-card next" id="future-project">
+            <div class="card-top"><div class="icon-planet planet-next" aria-hidden="true"><span>✧</span></div><span class="category">COMING NEXT</span></div>
+            <h3>Next research node</h3>
+            <p>New work in protein representation learning, interpretable AI, and metagenomics.</p>
+            <div class="card-detail"><span>Protein language models</span><span>Enzyme discovery</span><span>Visualization</span></div>
+            <div class="card-footer"><a href="https://github.com/sialock?tab=repositories" target="_blank" rel="noopener noreferrer">View all repositories <span aria-hidden="true">↗</span></a><span class="project-state">In exploration</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="focus" class="focus-section" aria-labelledby="focus-title">
+        <div class="section-head"><div><p class="section-kicker">WHAT I WORK ON</p><h2 id="focus-title">Research focus</h2></div><p>At the intersection of biology and computation.</p></div>
+        <div class="focus-chips" aria-label="Research topics">
+          <span class="focus-chip"><b class="symbol blue-text">⌬</b> Single-cell genomics</span>
+          <span class="focus-chip"><b class="symbol purple-text">⌁</b> Protein modeling</span>
+          <span class="focus-chip"><b class="symbol orange-text">◇</b> Metagenomics</span>
+          <span class="focus-chip"><b class="symbol blue-text">⟡</b> Machine learning</span>
+          <span class="focus-chip"><b class="symbol purple-text">{ }</b> Scientific Python</span>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>SIA / MOLECULAR UNIVERSE</span>
+        <p>Made for exploring the code.</p>
+        <a href="https://github.com/sialock" target="_blank" rel="noopener noreferrer">github.com/sialock ↗</a>
+      </footer>
+    </div>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
