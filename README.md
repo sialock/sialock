@@ -1,77 +1,72 @@
-<p align="center">
-  <img src="./assets/hero-molecular-lab.png" width="100%" alt="SIA / LAB — original 3D-inspired molecular artwork, DNA and computational biology" />
-</p>
-
 <div align="center">
 
-**Computational Biology · Machine Learning · Reproducible Research**
+# Hi, I'm Sia 👋
 
-I develop testable tools for single-cell genomics, protein structure analysis, and biological data science.
+### Computational Biology × Machine Learning
 
-[Explore the work](#featured-research-software) &nbsp;·&nbsp; [3D activity](#3d-contribution-landscape) &nbsp;·&nbsp; [Research interests](#research-focus)
+Building reproducible tools for **single-cell genomics**, **protein modeling**, and **biological data science**.
+
+<p>
+  <a href="https://github.com/sialock?tab=repositories"><img alt="Explore repositories" src="https://img.shields.io/badge/Explore-Projects-0B7285?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/sialock/DonorShift-Bench"><img alt="Single-cell ML" src="https://img.shields.io/badge/Single--cell-ML-166C80?style=for-the-badge"></a>
+  <a href="https://github.com/sialock/protein-folding-"><img alt="Structural bioinformatics" src="https://img.shields.io/badge/Structural-Bioinformatics-4D648D?style=for-the-badge"></a>
+</p>
+
+*Scientific questions first. Reproducible code, transparent evaluation, and honest limitations.*
 
 </div>
 
 ---
 
-## Featured research software
+## 🔬 Featured projects
 
 <table>
-<tr>
-<td width="50%" valign="top">
-<a href="https://github.com/sialock/DonorShift-Bench">
-<img width="100%" alt="Synthetic donor-held-out accuracy example for DonorShift-Bench" src="https://raw.githubusercontent.com/sialock/DonorShift-Bench/main/assets/demo_donor_accuracy.png" />
-</a>
-<h3 align="center">🧬 <a href="https://github.com/sialock/DonorShift-Bench">DonorShift-Bench</a></h3>
-<p align="center"><b>Single-cell ML on unseen patients</b></p>
-<p>Reproducible donor-held-out cell-type benchmarking, training-only gene selection, per-donor metrics, and offline reports.</p>
-<p><sub>Python · scRNA-seq · scikit-learn · PyTorch</sub></p>
-<p align="center"><a href="https://github.com/sialock/DonorShift-Bench"><b>Source code & documentation →</b></a></p>
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/sialock/protein-folding-">
-<img width="100%" alt="Real toy-energy trace from the bundled Protein-MC-Go synthetic experiment" src="./assets/protein-mc-example.png" />
-</a>
-<h3 align="center">🧪 <a href="https://github.com/sialock/protein-folding-">Protein-MC-Go</a></h3>
-<p align="center"><b>Reproducible Monte Carlo structural experiments</b></p>
-<p>Seed-controlled native-biased Cα simulations, structural diagnostics, command-line tools, and automated tests.</p>
-<p><sub>Python · Biopython · Monte Carlo · CI</sub></p>
-<p align="center"><a href="https://github.com/sialock/protein-folding-"><b>Source code & documentation →</b></a></p>
-</td>
-</tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/sialock/DonorShift-Bench">DonorShift-Bench</a></h3>
+      <p align="center"><strong>Leakage-aware evaluation for single-cell models</strong></p>
+      <a href="https://github.com/sialock/DonorShift-Bench"><img alt="DonorShift-Bench per-donor accuracy demonstration" src="https://raw.githubusercontent.com/sialock/DonorShift-Bench/main/assets/demo_donor_accuracy.png" width="100%"></a>
+      <p>Leave-one-donor-out benchmarking for cell-type classification, with training-only feature selection, per-donor metrics, and reproducible HTML reports.</p>
+      <p><sub>Python · scRNA-seq · scikit-learn · PyTorch · Testing</sub></p>
+      <p align="center"><a href="https://github.com/sialock/DonorShift-Bench#readme"><strong>Explore the project →</strong></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/sialock/protein-folding-">Protein-MC-Go</a></h3>
+      <p align="center"><strong>Reproducible protein Monte Carlo experiments</strong></p>
+      <a href="https://github.com/sialock/protein-folding-"><img alt="Protein-MC-Go example energy trace" src="https://raw.githubusercontent.com/sialock/protein-folding-/main/assets/demo_energy.svg" width="100%"></a>
+      <p>A documented Cα native-biased Monte Carlo teaching model with deterministic runs, structural diagnostics, a command-line interface, and automated tests.</p>
+      <p><sub>Python · Biopython · Structural biology · Monte Carlo · CI</sub></p>
+      <p align="center"><a href="https://github.com/sialock/protein-folding-#readme"><strong>Explore the project →</strong></a></p>
+    </td>
+  </tr>
 </table>
 
-<sub>Both example plots are based on synthetic demonstrations. DonorShift-Bench does not claim clinical validation; Protein-MC-Go is not a de novo protein-folding predictor.</sub>
+> **Research software note:** Both repositories distinguish synthetic demonstrations from biological validation. Protein-MC-Go is a reference-guided teaching model, not a de novo structure predictor.
 
-## 3D contribution landscape
+## 🧰 Tools & methods
 
-<p align="center">
-  <img src="./assets/contributions-3d.png" width="100%" alt="Three-dimensional PNG rendering of GitHub contribution history" />
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white">
+  <img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white">
+  <img alt="Scanpy" src="https://img.shields.io/badge/Scanpy-3B777D?style=flat-square">
+  <img alt="AnnData" src="https://img.shields.io/badge/AnnData-5B6D96?style=flat-square">
+  <img alt="Biopython" src="https://img.shields.io/badge/Biopython-2C8B67?style=flat-square">
+  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white">
 </p>
 
-<sub>This visualization is generated from GitHub contribution data and refreshed weekly by [GitHub Actions](./.github/workflows/profile-3d.yml). It is rendered to PNG rather than embedded as an animated SVG.</sub>
+**What I care about:** donor-aware validation · data-leakage prevention · robust benchmarks · protein structure analysis · transparent, reproducible research workflows.
 
-## Research focus
+## 🧭 Research directions
 
-| Area | Questions and methods |
-|:---|:---|
-| **Single-cell genomics** | Cell identities, inter-patient generalization, and robust evaluation |
-| **Protein intelligence** | Structure representations, protein language models, and interpretable analysis |
-| **Metagenomic discovery** | Enzyme-candidate triage and evidence-aware annotation |
-| **Scientific software** | Reproducibility, data integrity, automation, and transparent limitations |
-
-### Tools I work with
-
-`Python` · `PyTorch` · `scikit-learn` · `Scanpy` · `AnnData` · `Biopython` · `NumPy` · `GitHub Actions`
+- **Single-cell ML:** models that generalize to previously unseen donors rather than just random cell splits.
+- **Protein representation learning:** interpretable sequence embeddings and structure-aware analysis.
+- **Metagenomic enzyme discovery:** prioritizing candidate functions with multiple sources of evidence.
+- **Scientific software:** small, testable tools that other researchers can run and audit.
 
 ---
 
 <div align="center">
-
-**Biological questions first. Reliable software and clear evidence always.**
-
-[All repositories](https://github.com/sialock?tab=repositories) · [Three visual themes](./docs/design-options.md)
-
-<sub>SIA / LAB is a visual identity for this personal research-software portfolio. The hero artwork is illustrative, not an experimental molecular structure.</sub>
-
+  <sub>Explore the repositories, reproduce the examples, and open an issue if you find something to improve.</sub>
+  <p><a href="https://github.com/sialock?tab=repositories">github.com/sialock</a></p>
 </div>
