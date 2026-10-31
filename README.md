@@ -12,7 +12,6 @@ Building reproducible tools for **single-cell genomics**, **protein modeling**, 
   <a href="https://github.com/sialock/protein-folding-"><img alt="Structural bioinformatics" src="https://img.shields.io/badge/Structural-Bioinformatics-4D648D?style=for-the-badge"></a>
 </p>
 
-*Scientific questions first. Reproducible code, transparent evaluation, and honest limitations.*
 
 </div>
 
