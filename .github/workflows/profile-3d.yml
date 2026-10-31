@@ -1,0 +1,56 @@
+name: Refresh 3D contribution landscape
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * 1"
+  push:
+    paths:
+      - ".github/workflows/profile-3d.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-3d
+  cancel-in-progress: false
+
+jobs:
+  render:
+    name: Render real GitHub activity as a 3D PNG
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile
+        uses: actions/checkout@v4
+
+      - name: Generate 3D contribution chart
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Convert 3D chart to PNG
+        run: |
+          python -m pip install --disable-pip-version-check "CairoSVG==2.8.2"
+          mkdir -p assets
+          python - <<'PY'
+          import cairosvg
+          from pathlib import Path
+          source = Path("profile-3d-contrib/profile-night-green.svg")
+          if not source.is_file():
+              raise SystemExit(f"Expected chart was not generated: {source}")
+          cairosvg.svg2png(url=str(source), write_to="assets/contributions-3d.png", output_width=1500, background_color="#0b1220")
+          print("Rendered assets/contributions-3d.png")
+          PY
+
+      - name: Commit the PNG chart
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f assets/contributions-3d.png
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh 3D contribution landscape [skip ci]"
+            git push
+          else
+            echo "No image changes."
+          fi
